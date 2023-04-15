@@ -4,24 +4,50 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
-    min-height: 200vh;
 }
 a {
     text-decoration: none;
+}
+#trigger {
+    position: absolute;
+    top: 0;
 }
 .wrapper {
     width: 75em;
     margin: 0 auto;
 }
 header {
-    margin-top: 1.5em;
-    width: 100%;
-    height: 3.75em;
+    position: absolute;
+    top: 1.5em;
+    width: 75em;
+    height: 4.75em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.2s ease;
+}
+header.on-scroll {
+    z-index: 1;
+    position: fixed;
+    background: linear-gradient(90deg, rgba(0,192,253,0.35) 0%, rgba(231,15,170,0.35) 100%);
+    top: 0;
+    border-radius: 0 0 10px 10px;
+    width: 75em;
+    transition: all 0.2s ease;
+}
+header.on-scroll ion-icon {
+    color: #42446E;
+}
+header.on-scroll button {
+    color: #42446E;
+}
+main {
+    margin-top: 13em;
 }
 .logo {
     width: 6.25em;
@@ -390,4 +416,37 @@ footer .nav-button-footer button {
 }
 .view-code img {
     height: 100%;
+}
+.about {
+    margin-top: 4em;
+}
+.about-me {
+    width: 100%;
+    text-align: center;
+    height: 12em;
+    font-size: 1.5em;
+    margin-top: 3em;
+    color: #666666;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me span {
+    width: 99.5%;
+    height: 98%;
+    background: white;
+    border-radius: 10px;
+
+}
+.about-me::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    content: '';
+    top: 0;
+    background-image: linear-gradient(to bottom, #13B0F5 0%, #E70FAA 100%);
+    position: absolute;
+    z-index:-1;
 }

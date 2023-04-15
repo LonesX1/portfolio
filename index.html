@@ -10,18 +10,19 @@
     <title>Portfolio (Love & Coffe)</title>
 </head>
 <body>
+    <div id="trigger"></div>
     <div class="wrapper">
-        <header>
+        <header id="header-nav">
             <div class="logo">
                 <span>{0013}</span>
                 <span>LonesX</span>
             </div>
             <div class="nav-button">
-                <a href=""><button>Home</button></a>
-                <a href=""><button>About</button></a>
-                <a href=""><button>Tech stack</button></a>
-                <a href=""><button>Projects</button></a>
-                <a href=""><button>Contact</button></a>
+                <a href="#trigger"><button>Home</button></a>
+                <a href="#about"><button>About</button></a>
+                <a href="#tech-stack"><button>Tech stack</button></a>
+                <a href="#project"><button>Projects</button></a>
+                <a href="#footer"><button>Contact</button></a>
             </div>
             <div class="contact-button">
                 <a target="_blank" href="https://github.com/LonesX1">
@@ -36,7 +37,7 @@
             </div>
         </header>
         <main>
-            <div class="intro">
+            <div id="home" class="intro">
                 <span>Hi <img src="src/waving.png" alt="">, <br> My name is <br> <span>Floresco Denis</span> <br> I'am a web developer</span>
                 <div class="imagine">
                     <img src="src/Layer 1.png">
@@ -47,7 +48,7 @@
                 <hr>
                 <hr>
             </div>
-            <div class="tech-stack">
+            <div id="tech-stack" class="tech-stack">
                 <div class="container-title">
                     <span class="title">My Tech Stack</span>
                     <span class="subtitle"> Technologies I’ve been working with recently</span>    
@@ -79,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project">
+            <div id="project" class="project">
                 <div class="container-title">
                     <span class="title">Project</span>
                     <span class="subtitle"> Things I’ve built so far</span>    
@@ -249,10 +250,23 @@
                     </div>
                 </div>
             </div>
+            <div class="about" id="about">
+                <div class="container-title">
+                    <span class="title">About me</span>
+                    <span class="subtitle">Little thing about me and my skill</span>    
+                </div>
+                <div class="about-me">
+                   <span>
+                    Hello there! I am Floresco Denis - a React developer. I am only 19 years old, but I have a great passion for constantly improving my skills. I enjoy staying up-to-date with the latest trends and advancements in React development.
+                    I am a highly communicative individual who thrives in collaborative environments. I love bouncing ideas off others and working together to find creative solutions to complex problems. Whether it's working with my team or presenting my ideas to clients, I am a confident and articulate communicator. 
+                    With a strong foundation in React and a commitment to ongoing growth, I am excited to make a meaningful impact in the world of web development.
+                   </span>
+                </div>
+            </div>
         </main>
 
         <footer>
-            <div class="up-side-footer">
+            <div id="footer" class="up-side-footer">
                 <div class="logo">
                     <span>{0013}</span>
                     <span>LonesX</span>
@@ -290,7 +304,7 @@
         </footer>
     </div>
 
-
+    <script src="js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
