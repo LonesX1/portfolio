@@ -34,17 +34,24 @@ header {
 header.on-scroll {
     z-index: 1;
     position: fixed;
-    background: linear-gradient(90deg, rgba(0,192,253,0.35) 0%, rgba(231,15,170,0.35) 100%);
+    background: linear-gradient(90deg, rgba(0, 194, 253, 0.521) 0%, rgba(231, 15, 170, 0.568) 100%);
     top: 0;
     border-radius: 0 0 10px 10px;
     width: 75em;
     transition: all 0.2s ease;
+}
+header.on-scroll .logo {
+    pointer-events: none;
+    
 }
 header.on-scroll ion-icon {
     color: #42446E;
 }
 header.on-scroll button {
     color: #42446E;
+}
+header.on-scroll .nav-button a button{
+    color: white;
 }
 main {
     margin-top: 13em;
